@@ -1,14 +1,29 @@
-div.post {
-    border: 1px solid black;
-    width: 50%;
-    margin: 10px auto;
+body {
+    background-color: #181818;
 }
-div.details {
-    background-color: darkgrey;
-    color: white;
+
+header {
+    width: 40%;
+    text-align: center;
+    margin: auto;
+
+    background-color: #0ff;
 }
-div.details div {
-    display: inline;
-    width: 30%;
-    border: 1px solid black;
+
+article {
+    width: 80%;
+    margin: auto;
+
+    color: #0ff;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow-x: hidden;
+    text-align: center;
+
+    background-color: #0ff;
 }
