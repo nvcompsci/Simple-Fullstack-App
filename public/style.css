@@ -1,3 +1,8 @@
+/* Colors
+ * Magenta
+    Text - #f0f
+    Solids - #c0f
+*/
 body {
     background-color: #181818;
 }
@@ -6,15 +11,16 @@ header {
     width: 40%;
     text-align: center;
     margin: auto;
-
-    background-color: #0ff;
+    
+    background-image: linear-gradient(to bottom, #f0f, #c0f);
 }
 
 article {
     width: 80%;
     margin: auto;
 
-    color: #0ff;
+    color: #f0d;
+    text-align: center;
 }
 
 footer {
@@ -25,5 +31,22 @@ footer {
     overflow-x: hidden;
     text-align: center;
 
-    background-color: #0ff;
+    background-image: linear-gradient(to bottom, #f0f, #c0f);
 }
+
+button {
+    background-color:#818181;
+    border: none;
+    color: white;
+    padding: 3px;
+    border-radius: 12px;
+    transition-duration: 0.1s;
+    width: 200px;
+    margin: 15px;
+}
+
+button:hover{
+    background-color: cyan;
+    color:black;
+    box-shadow: 0 7px #008b8b;
+  }
