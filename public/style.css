@@ -1,26 +1,50 @@
 /* Colors
- * Magenta
-    Text - #f0f
+   Magenta
+    Text --- #f0f
     Solids - #c0f
+    Border - #b0b
 */
 body {
     background-color: #181818;
 }
 
 header {
-    width: 40%;
+    width: 35%;
     text-align: center;
     margin: auto;
-    
+    border: solid #b0b 2px;
+    border-radius: 24px;
+    padding: 4px;
     background-image: linear-gradient(to bottom, #f0f, #c0f);
+}
+
+nav button {
+    background-color:#181818;
+    border: solid #181818 2px;
+    color: #f4f;
+    padding: 4px 12px;
+    border-radius: 12px;
+    transition-duration: 0.1s;
+    margin: 15px;
+}
+
+nav button:hover{
+    background-color: #f4f;
+    border: solid #b0b 2px;
+    color: #181818;
 }
 
 article {
     width: 80%;
     margin: auto;
 
-    color: #f0d;
-    text-align: center;
+    color: #f0f;
+}
+
+hr {
+    background-color: #b0b;
+    border-width: 0px;
+    height: 4px;
 }
 
 footer {
@@ -33,20 +57,3 @@ footer {
 
     background-image: linear-gradient(to bottom, #f0f, #c0f);
 }
-
-button {
-    background-color:#818181;
-    border: none;
-    color: white;
-    padding: 3px;
-    border-radius: 12px;
-    transition-duration: 0.1s;
-    width: 200px;
-    margin: 15px;
-}
-
-button:hover{
-    background-color: cyan;
-    color:black;
-    box-shadow: 0 7px #008b8b;
-  }
