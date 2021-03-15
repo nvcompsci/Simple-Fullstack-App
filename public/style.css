@@ -41,6 +41,30 @@ article {
     color: #f0f;
 }
 
+article a {
+    color: #909;
+}
+
+label {
+    padding: 2px;
+    margin-left: 10px;
+}
+
+input {
+    padding: 4px;
+    margin: 5px 8px;
+
+    background-color: #c4f;
+}
+
+button {
+    font-size: 12px;
+    padding: 6px;
+    margin: 8px 64px;
+
+    background-color: #c4f;
+}
+
 hr {
     background-color: #b0b;
     border-width: 0px;
