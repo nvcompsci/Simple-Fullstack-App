@@ -1,0 +1,15 @@
+nav button {
+    background-color:#181818;
+    border: solid #181818 2px;
+    color: #f4f;
+    padding: 4px 12px;
+    border-radius: 12px;
+    transition-duration: 0.1s;
+    margin: 15px;
+}
+
+nav button:hover{
+    background-color: #f4f;
+    border: solid #b0b 2px;
+    color: #181818;
+}
