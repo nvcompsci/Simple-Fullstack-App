@@ -1,0 +1,102 @@
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+header {
+    padding-bottom: 8px;
+}
+
+.closebtn{
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    color:#818181;
+    text-decoration: none;
+}
+
+.closebtn:hover{
+    color: #f4f;
+    text-decoration: none;
+}
+
+.overlay-content {
+    position: relative;
+    top: 8%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+nav button {
+    background-color:#181818;
+    border: solid #181818 4px;
+    color: #f4f;
+    font-size: 0px;
+    padding: 12px;
+    transition-duration: 0.5s;
+    width: 75%;
+    margin: 10% 12.5%;
+    position: relative;
+}
+
+nav button:hover{
+    background-color: #f4f;
+    border-color: #b0b;
+    color: #181818;
+}
+
+/* /\ /\ /\ /\ /\
+    Overlay Stuff
+   ---------------
+    Article Stuff
+   \/ \/ \/ \/ \/ */
+
+h2 {
+    padding: 2px 8px;
+}
+
+.row {
+    display: inline-block;
+}
+
+.images {
+    float: left;
+    width: 80%;
+}
+
+img {
+    width: 20%;
+    padding: 2.5%;
+}
+
+.more {
+    float: right;
+    width: 20%;
+    height: max-content;
+}
+
+.more h3 {
+    margin: 25% auto;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.more h3 a {
+    cursor: pointer;
+    text-decoration: none;
+}

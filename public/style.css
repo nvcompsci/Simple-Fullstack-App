@@ -1,14 +1,77 @@
-div.post {
-    border: 1px solid black;
-    width: 50%;
-    margin: 10px auto;
+/* Colors
+   Magenta
+    Text --- #f0f
+    Solids - #c0f
+    Border - #b0b
+    links -- #b0b
+*/
+body {
+    background-color: #181818;
+    font-family: 'Oswald', sans-serif;
 }
-div.details {
-    background-color: darkgrey;
-    color: white;
+
+header {
+    width: 35%;
+    text-align: center;
+    margin: auto;
+    border: solid #b0b 2px;
+    border-radius: 24px;
+    padding: 4px;
+    background-image: linear-gradient(to bottom, #f0f, #c0f);
 }
-div.details div {
-    display: inline;
-    width: 30%;
-    border: 1px solid black;
+
+article {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 48px;
+
+    color: #f0f;
+}
+
+article a {
+    color: #b0b;
+}
+
+article a:hover {
+    color: #f0f;
+}
+
+label {
+    padding: 2px;
+    margin-left: 10px;
+}
+
+input {
+    padding: 4px;
+    margin: 5px 8px;
+    border: ridge #f0f 2px;
+
+    background-color: #c4f;
+    color: #000;
+}
+
+button {
+    font-size: 12px;
+    padding: 6px;
+    margin: 8px 64px;
+    border: solid #f0f 2px;
+
+    background-color: #c4f;
+}
+
+hr {
+    background-color: #b0b;
+    border-width: 0px;
+    height: 4px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow-x: hidden;
+    text-align: center;
+
+    background-image: linear-gradient(to bottom, #f0f, #c0f);
 }
