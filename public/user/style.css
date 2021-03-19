@@ -11,14 +11,20 @@
     transition: 0.5s;
 }
 
-.overlay .closebtn {
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+header {
+    padding-bottom: 8px;
+}
+
+.closebtn{
     position: absolute;
     top: 20px;
     right: 45px;
     font-size: 60px;
-}
-
-.closebtn{
     color:#818181;
     text-decoration: none;
 }
@@ -54,7 +60,43 @@ nav button:hover{
     color: #181818;
 }
 
+/* /\ /\ /\ /\ /\
+    Overlay Stuff
+   ---------------
+    Article Stuff
+   \/ \/ \/ \/ \/ */
+
+h2 {
+    padding: 2px 8px;
+}
+
+.row {
+    display: inline-block;
+}
+
+.images {
+    float: left;
+    width: 80%;
+}
+
 img {
-    width: 16%;
-    padding: 1% 2% 2% 2%;
+    width: 20%;
+    padding: 2.5%;
+}
+
+.more {
+    float: right;
+    width: 20%;
+    height: max-content;
+}
+
+.more h3 {
+    margin: 25% auto;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.more h3 a {
+    cursor: pointer;
+    text-decoration: none;
 }

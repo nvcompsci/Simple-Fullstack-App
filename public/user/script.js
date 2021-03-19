@@ -4,8 +4,21 @@ var buttons = [];
 for (let i = 0; i < buttonsCollection.length; i++) {
     buttons[i] = buttonsCollection[i]
 }
+var navIsOpen = false;
+
+document.getElementsByTagName("body")[0].onclick = anomalousClick
+
+function anomalousClick(event) {
+    if (!(event.target.className == "openbtn" || event.target.className == "overlay" || event.target.parentElement.className == "overlay" || event.target.parentElement.className == "overlay-content")) closeNav()
+}
+
+function toggleNav() {
+    if (navIsOpen) closeNav()
+    else openNav()
+}
 
 function openNav() {
+    navIsOpen = true;
     var width
     if (window.innerWidth <= 400) {
         width = `${window.innerWidth}px`
@@ -15,23 +28,14 @@ function openNav() {
     }
     overlay.style.width = width
     buttons.forEach(button => {
-        console.log(button)
         button.style.fontSize = "32px"
     })
 }
 
 function closeNav() {
+    navIsOpen = false
     overlay.style.width = "0px"
     buttons.forEach(button => {
         button.style.fontSize = "0px"
     })
-}
-
-function validPassword(password) {//run checks on what we want and don't
-    if (password.length < 8) return "length"
-    if (!password.match(".*[a-z].*")) return "lower"
-    if (!password.match(".*[A-Z].*")) return "upper"
-    if (!password.match(".*[0-9].*")) return "number"
-    //if (password.match(".*[ ].*")) return "space"
-    return "none";
 }
