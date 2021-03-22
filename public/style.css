@@ -3,9 +3,11 @@
     Text --- #f0f
     Solids - #c0f
     Border - #b0b
+    links -- #b0b
 */
 body {
     background-color: #181818;
+    font-family: 'Oswald', sans-serif;
 }
 
 header {
@@ -18,31 +20,20 @@ header {
     background-image: linear-gradient(to bottom, #f0f, #c0f);
 }
 
-nav button {
-    background-color:#181818;
-    border: solid #181818 2px;
-    color: #f4f;
-    padding: 4px 12px;
-    border-radius: 12px;
-    transition-duration: 0.1s;
-    margin: 15px;
-}
-
-nav button:hover{
-    background-color: #f4f;
-    border: solid #b0b 2px;
-    color: #181818;
-}
-
 article {
     width: 80%;
     margin: auto;
+    margin-bottom: 48px;
 
     color: #f0f;
 }
 
 article a {
-    color: #909;
+    color: #b0b;
+}
+
+article a:hover {
+    color: #f0f;
 }
 
 label {
@@ -53,14 +44,17 @@ label {
 input {
     padding: 4px;
     margin: 5px 8px;
+    border: ridge #f0f 2px;
 
     background-color: #c4f;
+    color: #000;
 }
 
 button {
     font-size: 12px;
     padding: 6px;
     margin: 8px 64px;
+    border: solid #f0f 2px;
 
     background-color: #c4f;
 }
